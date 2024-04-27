@@ -1,16 +1,13 @@
 
 import './App.css';
-
-import React from 'react'
 import HeloWorldComponenet from './Components/HeloWorldComponenet';
 
-export const App = () => {
+function App() {
   return (
-    <>
-
-      {/*  here we need to only import that componenet */}
-    <HeloWorldComponenet></HeloWorldComponenet>
-    </>
-  )
+   <>
+    <HeloWorldComponenet/>
+     </>
+  );
 }
 
+export default App;

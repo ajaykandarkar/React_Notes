@@ -1,11 +1,17 @@
 
 import './App.css';
-import HeloWorldComponenet from './Components/HeloWorldComponenet';
-
+import { Footer } from './Components/Footer';
+import Header from './Components/Header';
+// import HeloWorldComponenet from './Components/HeloWorldComponenet';
 function App() {
   return (
    <>
-    <HeloWorldComponenet/>
+    {/* <HeloWorldComponenet/> */}
+    <Header/>
+    <div>
+      <h1>Ajay</h1>
+    </div>
+    <Footer/>
      </>
   );
 }

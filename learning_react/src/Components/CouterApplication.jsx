@@ -4,10 +4,15 @@ import '../CSS/Counter.css';
 // I need to create a counter Application
 // if i need increment it need to incerement the counter value
 //I need to decrement i need to decrement the counter value 
-const CouterApplication = () => {
-    const [counterValue,setCounterValue] = useState(1);
-    const [message, setMessage] = useState("Do not decrement")
 
+
+// state
+// useState is a React Hook that lets add a state variable to your Componenet
+
+
+const CouterApplication = () => {
+  const [counterValue,setCounterValue] = useState(1); // intial value
+  //                    function
     const incrementCounter = () =>{
         setCounterValue(counterValue+1);
         console.log(counterValue);
@@ -20,7 +25,7 @@ const CouterApplication = () => {
     }
 
     const displayValue = () => {
-       return counterValue < 0  ? message : counterValue;
+       return counterValue < 0  ? "Do not increment" : counterValue;
     }
 
 
